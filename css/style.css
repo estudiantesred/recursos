@@ -3,6 +3,21 @@
     padding: 0;
     font-family: 'poppins';
 }
+.page-content {
+  background-color: blue;
+  display: grid;
+  grid-template: "empty-left        main-content empty-right" / 
+                  minmax(30px, 1fr) 1100px       minmax(30px, 1fr);
+}
+.main-content {
+  grid-area: main-content;
+  background-color: red;
+}
+.cards-box {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  gap: 20px;
+}
 h1 {
     margin-top: 50px;
     text-align: center;
@@ -10,24 +25,19 @@ h1 {
     font-weight: 600;
     color: rgb(48,48,48,.9);
 }
-.cards-box {
-    width: 1350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-}
+
 .cards {
     width: 250px;
     height: 350px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     border-radius: 20px;
+    margin: 20px;
 }
-.cards:hover {
+/* .cards:hover {
     width: 255px;
     height: 355px;
     cursor: pointer;
-}
+} */
 .card-title {
     font-size: 1.2em;
     font-weight: 400;
