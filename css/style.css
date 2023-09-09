@@ -28,44 +28,74 @@ h1 {
 
 .cards {
     width: 250px;
-    height: 350px;
+    /* height: 350px; */
     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
     border-radius: 20px;
     margin: 20px;
 }
-/* .cards:hover {
-    width: 255px;
-    height: 355px;
+.cards:hover {
+    /* width: 255px;
+    height: 355px; */
+    border: 1px solid black;
     cursor: pointer;
-} */
+}
 .card-title {
     font-size: 1.2em;
     font-weight: 400;
     text-align: center;
 }
 .box-img-card {
-    width: 200px;
     margin: 0 auto;
+    width: 80%;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.box-tipo-actividad {
+  height: 270px;
+}
+.img-tipo-actividad {
+  width: 100%;
 }
 .img-card {
-    width: 100%;
+    width: 150px;
 }
-@media only screen and (max-width:428px) {
+a {
+  text-decoration: none;
+}
+.card-asignature {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.3em;
+  background-color: rgb(89, 130, 24);
+}
+@media only screen and (max-width: 767px) {
+
+}
+@media only screen and (max-width: 430px) {
   .page-content {
     display: grid;
-    grid-template: "empty-left        main-content empty-right" / 
-                    minmax(10px, 1fr) 290px        minmax(10px, 1fr);
+    grid-template: "empty-left         main-content empty-right" / 
+                    minmax(10px, 1fr)  320px       minmax(10px, 1fr);
   }
   .cards-box {
     display: grid;
-    grid-template-columns: 250px;
+    grid-template-columns: 320px;
     gap: 0;
   }
   .cards {
-    margin: 20px;
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
   }
 }
-@media only screen and (max-width:320px) {
+@media only screen and (max-width: 359px) {
   .page-content {
     display: grid;
     grid-template: "empty-left        main-content empty-right" / 
