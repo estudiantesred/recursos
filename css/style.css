@@ -39,6 +39,24 @@ h1 {
     border: 1px solid rgb(96,96,96,.8);
     cursor: pointer;
 }
+.card-asign-ciencias, .card-asign-tecnologia {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 1.3em;
+  text-align: center;
+}
+.card-asign-ciencias {
+  background-color: rgb(97, 147, 16);
+}
+.card-asign-tecnologia {
+  background-color:#0d6efd;
+}
 .card-title {
   height: 50px;
   font-size: 1.1em;
@@ -47,6 +65,12 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.grade-card {
+  clear: both;
+  display: block;
+  font-size: .8em;
+  font-weight: 600;
 }
 .box-img-card {
     margin: 0 auto;
@@ -70,28 +94,17 @@ h1 {
 a {
   text-decoration: none;
 }
-.card-asign-ciencias, .card-asign-tecnologia {
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 1.3em;
-  text-align: center;
-}
-.card-asign-ciencias {
-  background-color: rgb(97, 147, 16);
-}
-.card-asign-tecnologia {
-  background-color:#0d6efd;
-}
 footer {
+  display: grid;
+  grid-template: "empty-left footer-content empyt-right" /
+                  10px       1fr            20px;
   width: 100%;
   /* height: 200px;; */
   color: white;
   background-color: #464c53;
+}
+.footer-content {
+  grid-area: footer-content;
   display: flex;
   justify-content: center;
   align-items: center;
