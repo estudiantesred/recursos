@@ -163,19 +163,23 @@ a {
 .boton-accion {
   height: 50px;
   width: 90%;
-  background-color: red;
   margin: 0 auto;
   border-radius: 15px;
   margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: rgb(24,24,24,.9);
   font-weight: 600;
   background-color:rgb(255,193,7);
+  transition: all .4s;
 }
 .boton-accion:hover {
-  background-color: rgb(103, 158, 14);
+  background-color:rgb(241, 235, 38);
+/*   color: white; */
+}
+.fa-solid {
+  margin-right: 7px;
 }
 @media only screen and (max-width: 1168px) {
   h1 {
